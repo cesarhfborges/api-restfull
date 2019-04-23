@@ -24,12 +24,12 @@ class Core {
 			}
 
 		} else {
-			$currentController = 'notFoundController'; //view padrão Neste Caso Como Estamos usando em forma de API mandaremos para NotFound
+			$currentController = 'errorController'; //view padrão Neste Caso Como Estamos usando em forma de API mandaremos para NotFound
 			$currentAction = 'index';
 		}
 
 		if(!file_exists('controllers/'.$currentController.'.php')) {
-			$currentController = 'notFoundController';
+			$currentController = 'errorController';
 			$currentAction = 'index';
 		}
 

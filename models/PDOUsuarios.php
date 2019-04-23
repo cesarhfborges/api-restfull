@@ -1,6 +1,7 @@
 <?php
 class PDOUsuarios extends Model {
 
+
     public function listaUsuarios($filtro = null){
         $sql = $this->db->prepare("SELECT `ID`, `NOME`, `SOBRENOME`, `EMAIL`, `TELEFONE1`, `TELEFONE2`, `SENHA`, `ATIVO`, `ULTLOGIN`, `ULTIP`, `USERCRI`, `USERMOD`, `DATACRI`, `DATAMOD`, `FOTO`, `EXCLUIDO`, `TOKEN`, `TOKENVALIDADE` FROM `usuarios` ");
 //        $sql->bindValue(':TOKEN', $this->hashSenha($email.$id));
